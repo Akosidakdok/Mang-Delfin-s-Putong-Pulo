@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mang Delfin's Putong Polo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/f5182c5630.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <img src="Assets/logo.jpg" alt="Logo" />
+    </div>
+
+    <div class="main-header-content">
+      <div class="title-section">
+        <h1>Mang Delfin's Putong Polo</h1>
+        <p>Authentic Taste, Every Bite</p>
+      </div>
+
+      <!-- Burger menu icon (hidden on desktop) -->
+      <i class="fa-solid fa-bars menu-icon" id="open-btn"></i>
+
+      <!-- Nav menu (sidebar on mobile) -->
+      <ul id="sidemenu" class="nav-links">
+        <i class="fa-solid fa-xmark close-icon" id="close-btn"></i>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a class="active" href="Testimonials.html">Testimonials</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+   <section class="banner">
+  <img src="Assets/TestimonialsB.png" alt="Banner" class="carousel-image active">
+  <img src="Assets/Banner2.png" alt="Banner" class="carousel-image">
+  <img src="Assets/Banner3.png" alt="Banner" class="carousel-image">
+</section>
+  
+
+    <div class="testimonial-wrapper">
+      <!-- Testimonial Cards -->
+      <div class="testimonials-card">
+        <p class="Testi">Delicious and authentic.<br> Reminds me of my childhood favorites!</p>
+        <div class="stars">★★★★★</div>
+        <img class="imgT" src="Assets/Enigo.jpg" alt="Stacey">
+        <p class="namet ">Mark Enigo</p>
+      </div>
+
+      <div class="testimonials-card">
+        <p class="Testi">My go-to whenever I’m craving Filipino delicacies.Highly recommended!</p>
+        <div class="stars">★★★★★</div>
+        <img class="imgT" src="Assets/Andrei.jpg" alt="Maloi">
+        <p class="namet ">Andrei Quejada</p>
+      </div>
+
+      <div class="testimonials-card">
+        <p class="Testi">Perfectly made native treats.You can really taste the love and tradition.</p>
+        <div class="stars">★★★★★</div>
+        <img class="imgT" src="Assets/Raymond.jpg" alt="Aiah">
+        <p class="namet ">John Raymond C. Geronimo</p>
+      </div>
+
+
+      <div class="view-all-btn-container">
+        <a href="TestimonialsAll.html" class="view-all-btn"><em>View All</em></a>
+      </div>
+    </div>
+
+    <div class="testimonial-form">
+      <p class="Tform ">Share your stories here!</p>
+      <form action="submit_testimonial.php" method="POST">
+  <input type="text" name="name" placeholder="Name" required />
+  <input type="number" name="rating" min="1" max="5" placeholder="RATE (1–5)" required />
+  <textarea name="message" placeholder="Message" rows="5" required></textarea>
+  <button class="buttonC" type="submit">Send Message</button>
+</form>
+
+    </div>
+
+
+    <footer>
+    <div class="footer-top">
+      <div class="footer-left">
+        <img src="Assets/logo_black.png" alt="Logo" class="footer-logo">
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="About.html">About</a>
+          <a href="Menu.html">Menu</a>
+          <a href="Gallery.html">Gallery</a>
+          <a href="Contact.html">Contact</a>
+          <a href="Testimonials.html">Testimonial</a>
+        </nav>
+      </div>
+      <div class="footer-right">
+        <p><em>Follow us</em></p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/MangDelfinsPutongPolo"><img src="Assets/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="Assets/instagram.png" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© All Rights Reserved. Mang Delfin’s Putong Polo (2025)</p>
+    </div>
+  </footer>
+<script src="nav.js"></script>
+<script src="Banner.js"></script>
+</body>
+</html>
