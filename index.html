@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mang Delfin's Putong Polo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/f5182c5630.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="Assets/logo.jpg" alt="Logo" />
+      </div>
+
+      <div class="main-header-content">
+        <div class="title-section">
+          <h1>Mang Delfin's Putong Polo</h1>
+          <p>Authentic Taste, Every Bite</p>
+        </div>
+
+        <!-- Burger menu icon (hidden on desktop) -->
+        <i class="fa-solid fa-bars menu-icon" id="open-btn"></i>
+
+        <!-- Nav menu (sidebar on mobile) -->
+        <ul id="sidemenu" class="nav-links">
+          <i class="fa-solid fa-xmark close-icon" id="close-btn"></i>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Menu.html">Menu</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Testimonials.html">Testimonials</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner">
+    <img src="Assets/HomeB.png" alt="Banner" class="carousel-image active">
+    <img src="Assets/Banner2.png" alt="Banner" class="carousel-image">
+    <img src="Assets/Banner3.png" alt="Banner" class="carousel-image">
+  </section>
+
+  <div class="top-banner">
+    <p class="banner-text"><em><strong>WANT TO TRY OUR DELICACIES?</strong></em></p>
+
+    <div class="content-box">
+      <h2>Try our Best Seller!</h2>
+      <div class="items1">
+        <div class="item1">
+          <img src="Assets/putobrown2.jpg" alt="Putong Polo">
+          <div class="caption">Putong Polo</div>
+        </div>
+        <div class="item1">
+          <img src="Assets/PANCITMALABON2ND.jpg" alt="Pancit Malabon">
+          <div class="caption">Pancit Malabon</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="menu-section">
+    <h2>Our Menu</h2>
+    <p class="subheading">A taste of tradition on every bite</p>
+
+    <div class="carousel-container">
+      <button class="nav left" onclick="prevSlide()">&#10094;</button>
+      <div class="carousel" id="carousel">
+        <!-- 15 placeholders -->
+        <div class="item"><img src="Assets/putobrown2.jpg" alt="Item 1">
+          <p>Putong Polo Brown</p>
+        </div>
+        <div class="item"><img src="Assets/cassava2.jpg" alt="Item 2">
+          <p>Cassava Cake</p>
+        </div>
+        <div class="item"><img src="Assets/kutsinta2.jpg" alt="Item 3">
+          <p>Kutsinta</p>
+        </div>
+        <div class="item"><img src="Assets/putowhite2.jpg" alt="Item 4">
+          <p>Putong Polo White</p>
+        </div>
+        <div class="item"><img src="Assets/pichi2.jpg" alt="Item 5">
+          <p>Pichi-Pichi</p>
+        </div>
+        <div class="item"><img src="Assets/SAPIN-SAPIN.jpg" alt="Item 6">
+          <p>Sapin-Sapin Box</p>
+        </div>
+        <div class="item"><img src="Assets/SUMAN.jpg" alt="Item 7">
+          <p>Suman sa Lihia</p>
+        </div>
+        <div class="item"><img src="Assets/sapinsolo.png" alt="Item 8">
+          <p>Sapin-Sapin Solo</p>
+        </div>
+        <div class="item"><img src="Assets/TOKNENENG.jpg" alt="Item 9">
+          <p>Tokneneng</p>
+        </div>
+        <div class="item"><img src="Assets/KWEK-KWEK.jpg" alt="Item 10">
+          <p>Kwek-Kwek</p>
+        </div>
+        <div class="item"><img src="Assets/renelyeno.jpg" alt="Item 11">
+          <p>Renelyenong Bangus</p>
+        </div>
+      </div>
+      <button class="nav right" onclick="nextSlide()">&#10095;</button>
+    </div>
+  </section>
+
+  <script src="Hmenu.js"></script>
+
+  <section class="branches-section">
+    <h2>Our Branches</h2>
+    <p class="subheading">A place when you can find comfort</p>
+
+    <div class="branches-container">
+
+      <div class="branches" id="branches">
+
+        <div class="item"><img src="Assets/south.jpg" alt="Item 1">
+          <p>South Supermarket</p>
+        </div>
+        <div class="item"><img src="Assets/polomarket.jpg" alt="Item 2">
+          <p>Polo Market</p>
+        </div>
+        <div class="item"><img src="Assets/polopark.jpg" alt="Item 3">
+          <p>Polo Park</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial-section">
+    <div class="testimonial-header">
+      <p><em>Real stories from those who’ve tasted tradition.</em></p>
+    </div>
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        <em>My go-to whenever I’m craving Filipino delicacies. Highly recommended!</em>
+      </p>
+      <div class="stars">
+        ★ ★ ★ ★ ★
+      </div>
+      <div class="profile">
+        <img src="Assets/Andrei.jpg" alt="Profile" class="profile-img">
+        <p class="profile-name">Andrei Quejada</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-left">
+        <img src="Assets/logo_black.png" alt="Logo" class="footer-logo">
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="About.html">About</a>
+          <a href="Menu.html">Menu</a>
+          <a href="Gallery.html">Gallery</a>
+          <a href="Contact.html">Contact</a>
+          <a href="Testimonials.html">Testimonial</a>
+        </nav>
+      </div>
+      <div class="footer-right">
+        <p><em>Follow us</em></p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/MangDelfinsPutongPolo"><img src="Assets/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="Assets/instagram.png" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© All Rights Reserved. Mang Delfin’s Putong Polo (2025)</p>
+    </div>
+  </footer>
+  <script src="nav.js"></script>
+  <script src="Banner.js"></script>
+</body>
+
+</html>
